@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AMPPhoto</string>
+    <string name="test">Testing</string>
+    <string name="usb">USB</string>
+    <string name="sd">SD</string>
+    <string name="off">off</string>
+    <string name="three">3</string>
+    <string name="six">6</string>
+    <string name="nine">9</string>
+    <string name="twele">12</string>
+    <string name="dialog_title">SlideShow Time</string>
+</resources>

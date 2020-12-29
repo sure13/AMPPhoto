@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background" >
+
+ <androidx.viewpager.widget.ViewPager
+     android:id="@+id/view_pager"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"/>
+   <ImageView
+      android:id="@+id/pre_image"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/pre_selector"
+       android:layout_alignParentLeft="true"
+       android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/center_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/photo_center"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/next_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/bottom_margin_10"
+        android:background="@mipmap/bg_down">
+     <ImageView
+         android:id="@+id/scale_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/screen_not_full_selector"
+         android:layout_weight="1"
+         android:layout_marginLeft="@dimen/margin_80"
+         />
+     <ImageView
+         android:id="@+id/select_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/select_selector"
+         android:layout_weight="0.5"/>
+     <TextView
+         android:id="@+id/photo_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/white"
+         android:textSize="@dimen/photo_name_size"
+         android:layout_gravity="center_vertical"
+         android:gravity="center_horizontal"
+         android:layout_weight="3"/>
+     <ImageView
+         android:id="@+id/list_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/list_selector"
+         android:layout_marginRight="@dimen/margin_80"
+         android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
